@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"">
+    <title>Солнечная Бахча</title>
+    <link href="style.css" rel="stylesheet" >
+</head>
+<body>
+    <div class="nav">
+        <h1 class="main-title heading4  ">Солнечная Бахча</h1>
+        <ul class="labelbox">
+            <li class="label " onclick="scrollToWatermelons()"><a class="display-desktop">Лучшие сорта арбузов</a></li>
+            <li class="label " onclick="scrollToWatermelons()"><a class="display-mobile">Лучшие арбузы</a></li>
+            <li class="label"><button class="map-button" onclick="scrollToMap()"><a class="display-mobile">Карта</a><a class="display-desktop">Мы на карте</a></button></li>
+        </ul>
+    </div>
+    <main>
+        <header class="hero">
+
+                <div class="content">
+                    <div class="block">
+                    <div class="text">
+                        <h1 class="heading1">Наш арбуз - лучший герой вашего стола!</h1>
+                        <p class="paragraph">Наши арбузы радуют потребителей с 1994 года.</p>
+                    </div>
+                    <button class="contacts-button" onclick="scrollToContacts()" ><p class="label">Контактные данные</p></button>
+               
+                </div>
+                    
+                
+                <img class="logo" src="images/pngtree-watermelon-transparent-background-png-image_19730741.png">
+             </div>
+        </header>
+
+             <div class="services">
+                 <div class="intro">
+                     <div class="content">
+                        <h2>Услуги</h2>
+                        <p class="heading2" id="service-description">Предлагаем фермерские арбузы лучших сортов - гарантированно сладкие продаваемые по всей Омской области</p>
+                        <p class="paragraph">“Сладость, которую вырастило само солнце” - Шовхал Чурчаев</p>
+                        </div>
+                    </div>
+
+                <div class="section section1" id="watermelons">
+                    
+                    <div class="card">
+                        <div class="image"></div>
+                        <div class="content">
+                        <div class="text">
+                            <h3 class="heading3">Сорт “Кримсон свит”</h3>
+                            <p class="paragraph">Является мировым стандартом, “лицо нашей фермы”. Имеет отличный вкус и сахаристость </p>
+                        </div>
+                        <div class="labelbox">
+                            <div class="label">Вес 8 - 12 кг</div>
+                            <div class="label">Мякоть хрустящая, сладкая</div>
+                            <div class="label">Кожура средней толщины</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="section section2">
+                    <div class="card">
+                        <div class="image"></div>
+                        <div class="content">
+                        <div class="text">
+                            <h3 class="heading3">Сорт “Топ ган”</h3>
+                            <p class="paragraph">Очень популярный ранний сорт, овально круглый со светлыми, размытыми полосами. Уступает “кримсон свит” в сахаристости и аромате. </p>
+                        </div>
+                        <div class="labelbox">
+                            <div class="label">Вес 8 - 14 кг</div>
+                            <div class="label">Мякоть плотная, сладкая</div>
+                            <div class="label">Кожура тонкая</div>
+                        </div>
+                    </div>
+                    </div>
+                    
+                </div>
+
+                <div class="section section3">
+                    <div class="card">
+                        <div class="image"></div>
+                        <div class="content">
+                        <div class="text">
+                            <h3 class="heading3">Сорт “Шуга бейби”</h3>
+                            <p class="paragraph">Легендарный ранний сорт с мелкими плодами. Идеальный “семейный” размер на один-два раза. </p>
+                        </div>
+                        <div class="labelbox">
+                            <div class="label">Вес 3 - 4 кг</div>
+                            <div class="label">Мякоть очень сладкая</div>
+                            <div class="label">Кожура почти без полос</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+             </div>
+
+
+             <div class="reviews">
+                 <div class="carousel">
+                     <h2 class="heading2">Счастливые отзывы наших клиентов</h2>
+                     <div class="quotesbox">
+                         <div class="titles">
+                             <div class="component active" data-target="quote1">
+                                <div class="text active">
+                                    <p class="heading5 display-desktop">Репер</p>
+                                    <p class="label display-mobile">Репер</p>
+                                    <p class="label">Москва, Россия</p>
+                                </div>
+                             </div>
+                             <div class="component" data-target="quote2">
+                                <div class="text">
+                                    <p class="heading5 display-desktop">Бизнесмен</p>
+                                    <p class="label display-mobile">Бизнесмен</p>
+                                    <p class="label">Кемерово, Россия</p>
+                                </div>
+                            </div>
+                            <div class="component" data-target="quote3">
+                                <div class="text">
+                                    <p class="heading5 display-desktop">Шаурмен</p>
+                                    <p class="label display-mobile">Шаурмен</p>
+                                    <p class="label">Омск, Россия</p>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="quotes">
+                            <div class="quote1 active">
+                                <p class="quote-text">"Я считаю себя экспертом в двух вещах: в выборе тачек и в выборе арбузов. Так вот ваши арбузы - это Porsche в мире арбузов, ровный хруст, идеальная сахаристость, и главное вкус как в детстве. Рекомендую однозначно”</p>
+                                <div class="byline">
+                                    <img class="avatar" src="images/макан.png">
+                                    <p class="paragraph">Андрей Кириллович Косолапов, 23 года</p>
+                                </div>
+                            </div>
+                                <div class="quote2">
+                                    <p class="quote-text">"Я редко пишу отзывы о продуктах, но этот случай - идеальная кейс-стади. Я уверен что эта арбузная компания стрельнет.”</p>
+                                    <div class="byline">
+                                        <img class="avatar" src="images/tinkoff.png">
+                                        <p class="paragraph">Олег Юрьевич Тиньков, 58 лет</p>
+                                    </div>
+                                </div>
+                                    <div class="quote3">
+                                        <p class="quote-text">"Устал после работы, захотелось чего - то свежего. Купил ваш арбуз шуга бейби, разрезал - и это был лучший момент дня. Сочный, освежающий, снял всю усталость. И пошёл работать ещё одну смену”</p>
+                                        <div class="byline">
+                                            <img class="avatar" src="images/Рашидик братик.jpg">
+                                            <p class="paragraph">Кочеганов Рашид Вадимович, 18 лет</p>  
+                                        </div>
+                                    </div>
+                            </div>                        
+                     </div>
+                 </div>
+             </div>
+
+             <img class="imgbreak" src="images/imagebreak.png">
+             <div class="clients">
+                 <div class="content">
+                    <div class="header">
+                        
+                        <h2 class="heading2">Наши арбузы доступны для всех</h2>
+                        <p class="paragraph">Наши арбузы изменены генетически, чтобы сохранить природу и ваше здоровье.</p>
+                    </div>
+                    <div class="columns">
+                        <div class="column1">
+                            <img class="icon" src="images/calendar-days-solid-full.svg">
+                            <h3 class="heading4">Для организаторов мероприятий</h3>
+                            <p class="paragraph">Гарантия вкуса и вида</p>
+                            <p class="paragraph">Сочный акцент вашего праздника, который оценят все гости. Вы получаете лучшую цену и гарантию свежести.</p>
+                        </div>
+                        <div class="column2">
+                            <img class="icon" src="images/users-solid-full.svg">
+                            <h3 class="heading4">Для семей</h3>
+                            <p class="paragraph">Безопасность и радость</p>
+                            <p class="paragraph">Арбузы Солнечной Бахчи - это не просто угощение. Это уверенность в безопасности и радости всей семьи, от самых маленьких до старших..</p>
+                        </div>
+                        <div class="column3">
+                            <img class="icon" src="images/truck-fast-solid-full.svg">
+                            <h3 class="heading4">Для коммерческих предложений</h3>
+                            <p class="paragraph">Прямые поставки и стабильность</p>
+                            <p class="paragraph">Стабильные прямые поставки отборных арбузов с фермы. Увеличиваем вашу прибыль и удовольствие покупателей.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="history">
+                <div class="card">
+                    <div class="content">
+                        <p class="heading3">История нашей компании</p>
+                        <p class="paragraph">Всё началось в 1994 году с покупки небольшой бахчи на юге Омской области. Первый урожай раздавали соседям.Их восторг стал отправной точкой нашей компании. С каждым сезоном мы растли и экспериментировали, поставив перед собой задачу не просто продавать арбузы, а создать эталон качества. На сегодняшний день наша компания - это устойчивый, узнаваемый бренд в нашем регионе. </p>
+                    </div>
+                </div>
+                <img src="images/history.jpg"> 
+            </div>
+            
+            <div class="map" id="map">
+                <div class="content">
+                    <p class="heading2">Мы на карте</p>
+                    <iframe id="map_910166728" frameborder="0" width="100%" height="600px" src="https://makemap.2gis.ru/widget?data=eJzVlU1v2kAQhv_L9liLzn7vIuWATEOSWhTnEtGIg4sXcONgZG-gFPHfu2vHJG3aRolyKD7Z7-6s53lntLNDRZma0qQDU9waW2amQt3rHbLblUFddGoSe1caFKBVWaxMaev1HUpNNS2zlc2Kpds1Ouu9hwsaV8PBOUS9OVyc-fdTGM_iqr9ZT_vsxB1R2bK4MWGRF6ULesfSr5Lwg36VpXaBuqT9_rxKppndoi4O0CzL80Oc4KmgGjXqYRd0eIB-nC9T892F7AM0b4C2Pt17mlGRb-cu4wBNC4edLRNb415fS9rhHDOiAs46BDPKJ0EtMuX-1YjAJG1VwoVoVKzgoApC71XOdav-duxk4nLLUtSlQrB98KzTNrO5X4eLUXynww1EUbxOBxFEN85nebkYhgzGH72_fyjKJxe0ZW7jOrZpqCH65oLDTRT2tsOHwkxba4EoPCPokZHQPn9zNFvaJ346bColxdxja6kkUS01k5i-iPpRV40duR2cQVTGVdiP13rQg0jGduhdGT914Bey6WwG8DZkCu7BNIMHMM1fVs7_D0woDXWva42Zki0ZF1IdNxmRChMZcN4BD0laMsE0fhXZfA7RB__eqwnTwSWM-5fZ5uTfRJ4nSd6kVpQKLOtaUUa0aIkkHCsR44SAarpPg2IHIsWPvPsYIUTjmoxxeKiVcjPktWSPB2zvmRq93aXOuTtLNrOMKEJbElcwsZ8E6DZZjYoqa3LYoTyx7vaoL0qstPKdqlyJUe6XvTGYScEY-AZW2uVXFLcuOz-8HUuR51cLY_IvtWrLO7P_Cdt9nDQ" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
+
+
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer id="contactstarget">
+        <div class="leftcolumn" >
+            <div class="contacts">
+               <a class="main-title"><h1 class="heading4">Солнечная Бахча</h1></a> 
+               <div class="text"><p class="paragraph">Контактные данные:</p>
+               <p class="label">
+                Телефон - 8 952 81 22 52</p>
+                
+                <p class="label">Электронная почта - infosunnybahcha@gmail.com</p>
+                
+                <p class="label"> Адрес нашего офиса - Россия, Омская область, г.Омск, ул. Ленина 24.</p>
+                
+                <p class="label">Адрес нашей бахчи - Россия, Омская область, с. Павлоградка, ул. Шевченко</p>
+            </div>
+        </div>
+            <p class="label">ООО ”Солнечная Бахча”</p>
+        </div>
+
+        <div class="rightcolumn">
+            <div class="content">
+                <button class="goup" onclick="scrollUp()"><p class="label">Вверх</p></button>
+            </div>
+            <div class="rights"><p class="label">© 2026 Все права украдены</p></div>
+        </div>
+    </footer>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
