@@ -19,6 +19,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 background-color: #f9f9f9;
+overflow-x: hidden;
 }
 li{
     list-style: none;
@@ -742,3 +743,4 @@ footer{
     gap:80px;
     padding:  32px 24px;
 }
+
