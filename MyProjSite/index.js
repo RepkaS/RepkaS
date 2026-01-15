@@ -229,7 +229,7 @@ document.addEventListener("DOMContentLoaded", () => {
    tabs.forEach((tab, index) => {
       tab.addEventListener("change", () => {
          contents.forEach((content, contentIndex) => {
-            content.style.display = contentIndex === index ? "grid" : "none";
+            content.style.display = contentIndex === index ? "flex" : "none";
          });
       });
    });
@@ -273,3 +273,4 @@ document.getElementById("resetButton").addEventListener("click", () => {
       alert("Данные успешно сброшены!");
    }
 })
+
