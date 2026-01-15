@@ -12,6 +12,7 @@ body {
 header {
 background: hsl(234, 82%, 39%);
     display: flex;
+    
     width: 100%;
     height: 13vh;
     margin: 0;
@@ -25,7 +26,8 @@ background: hsl(234, 82%, 39%);
     font-size: 2.5em;
     align-items: center;
     justify-content: left;
-    width: 30%;
+    max-width: 30%;
+    width: 100%;
 }
 #firm h1 {
     color: white;
@@ -42,7 +44,8 @@ main{
     flex-direction: row;
 }
 aside{
-    width: 40%;
+    max-width: 40%;
+    width: 100%;
     height: 790px;
     overflow: hidden;
     background-color: hsl(234, 82%, 29%);
@@ -93,7 +96,8 @@ aside{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 33.3%;
+    max-width: 33.3%;
+    width: 100%;
     color: white;
     background-color: hsl(234, 82%, 39%); 
     outline: 2px solid hsl(234, 82%, 29%);
@@ -105,10 +109,21 @@ aside{
     color: rgb(142, 142, 142);
 }
 #content-1{
-    display: grid;
-    grid-template-columns: 255px 255px 255px;
-    grid-template-rows: 250px 250px;
+    display: flex;
+    flex-direction: row;
+    gap: 11%;
+    flex-wrap: wrap ;
     padding-top: 20px;
+    padding: 0 30px 0 30px;
+
+}
+#content-2{
+    display: flex;
+    flex-direction: row;
+    gap: 11%;
+    flex-wrap: wrap ;
+    padding-top: 20px;
+    padding: 0 30px 0 30px;
 
 }
 .upgradeBackground {
@@ -131,10 +146,11 @@ aside{
     align-items: center;
     justify-content: center;
     color: white;
+    max-width: 200px;
 
 }
 .upgradeBackground  {
-    max-width: 200px;
+    max-width: 1600px;
 }
 .otherUpgrade{
 
@@ -173,7 +189,8 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 60%;
+    max-width: 60%;
+    width: 100%;
     height: 790px;
     gap: 10%;
 
@@ -186,8 +203,8 @@ section img{
 
 }
 section #addBalance{
-    width: 450px;
-    height: 450px;
+    max-width: 450px;
+    max-height: 450px;
     background-color: hsl(234, 82%, 39%);
     border-radius: 50%;
     transition: 0.4s;
@@ -212,7 +229,7 @@ section #addBalance:hover{
     flex-direction: row;
     align-items: center;
     justify-content: left;
-    width: 40%;
+    max-width: 300px;
     min-height: 60%;
     padding: 30px;
     background-color: hsl(234, 82%, 29%);
@@ -225,7 +242,7 @@ section #addBalance:hover{
     flex-direction: row;
     align-items: center;
     justify-content: left;
-    width: 30%;
+    max-width: 200px;
     min-height: 40%;
     background-color: hsl(234, 82%, 29%);
     border-bottom-right-radius: 40px;
@@ -296,8 +313,10 @@ height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    width: 20%;
+    justify-content: right; ;
+    max-width: 230px;
+    width: 100%;
+    gap: 10px;
     font-size: 0.8em;
 
 }
@@ -306,3 +325,32 @@ height: 100%;
     flex-direction: column;
     justify-content: center;
 }
+
+@media (max-width: 768px) {
+    #firm h1{
+        display: none;
+    }
+    main{
+        flex-direction: column-reverse;
+    }
+    aside{
+        max-width: 100%;
+        overflow:scroll ;
+    }
+    section{
+        max-width: 100%;
+    }
+    #content-1{
+        justify-content: center;
+    }
+    .upgrade{
+        max-width: 100%;
+        width: 100%;
+    }
+    .upgradeBackground{
+        max-width: 100%;
+        width: 100%;
+    }
+    
+}
+
