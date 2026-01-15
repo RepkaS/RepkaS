@@ -273,4 +273,3 @@ document.getElementById("resetButton").addEventListener("click", () => {
       alert("Данные успешно сброшены!");
    }
 })
-
